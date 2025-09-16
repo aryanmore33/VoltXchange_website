@@ -4,11 +4,10 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Sidebar from './Components/Sidebar'
 import Navbar from './Components/Navbar'
-import Login from './Components/Login'
-import OnboardingForm from './Components/OnboardingForm'
-import Dashboard from './Components/Dashboard'
-import Landingpage from './Components/Landingpage'
-import Footer from './Components/Footer '
+import Login from './components/Login'
+// import Finance from './components/Finance '
+// import Tradeexecution from './components/Tradeexecution '
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -17,10 +16,8 @@ function App() {
     <Navbar/>
       <Sidebar/>
       <Login/>
-      <OnboardingForm/>
-      <Dashboard/>
-      <Landingpage/>
-      <Footer/>
+      {/* <Finance/> */}
+      {/* <Tradeexecution/> */}
     </>
   )
 }
