@@ -5,6 +5,7 @@ import './App.css'
 import Sidebar from './Components/Sidebar'
 import Navbar from './Components/Navbar'
 import Login from './components/Login'
+import ProfileandSettings from './Components/ProfileandSettings'
 // import Finance from './components/Finance '
 // import Tradeexecution from './components/Tradeexecution '
 
@@ -18,6 +19,7 @@ function App() {
       <Login/>
       {/* <Finance/> */}
       {/* <Tradeexecution/> */}
+      <ProfileandSettings/>
     </>
   )
 }
