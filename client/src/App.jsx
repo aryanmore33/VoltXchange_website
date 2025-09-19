@@ -5,6 +5,7 @@ import './App.css'
 import Sidebar from './Components/Sidebar'
 import Navbar from './Components/Navbar'
 import Login from './Components/Login'
+import Login from './Components/Login'
 import ProfileandSettings from './Components/ProfileandSettings'
 import Finance from './Components/Finance '
 import Tradeexecution from './Components/Tradeexecution '
@@ -25,6 +26,8 @@ function App() {
     <Navbar/>
       <Sidebar/>
       <Login/>
+      <Finance/>
+      <Tradeexecution/>
       <Finance/>
       <Tradeexecution/>
       <ProfileandSettings/>

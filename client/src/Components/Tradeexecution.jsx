@@ -7,7 +7,7 @@ const offers = [
   { id: 4, title: "Natural Gas Energy", supplier: "Global Energy Corp", available: "10,000 kWh", price: "$0.10 / kWh", minPurchase: "200 kWh", },
 ];
 
-const side = () => {
+const Tradeexecution = () => {
   const [selected, setSelected] = useState(null);
   return (
     <div className="flex flex-row">
@@ -95,4 +95,4 @@ const side = () => {
   )
 }
 
-export default side
+export default Tradeexecution
