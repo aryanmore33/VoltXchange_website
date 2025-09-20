@@ -27,6 +27,7 @@ function App() {
       <Sidebar/>
       <Login/>
       <Finance/>
+      <Insights/>
       <Tradeexecution/>
       <Finance/>
       <Tradeexecution/>
