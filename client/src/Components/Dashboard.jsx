@@ -1,4 +1,6 @@
 import React from "react";
+import img1 from "../assets/img1.jpeg"
+import img2 from "../assets/img2.jpeg"
 
 const Dashboard = () => {
   return (
@@ -63,7 +65,7 @@ const Dashboard = () => {
             <div className="bg-white p-6 rounded-lg shadow md:col-span-2">
               <h3 className="font-semibold mb-4">Market Price Trends (MWh/€)</h3>
               <div className="h-48 flex items-center justify-center text-gray-400">
-                  [Chart Placeholder]<img src="img2.jpg" style={{width:"400",height:"50%"}}></img>
+                  [Chart Placeholder]<img src={img1} alt="" className="rounded-lg w-full" />
               </div>
             </div>
             <div className="bg-white p-6 rounded-lg shadow">
@@ -80,7 +82,7 @@ const Dashboard = () => {
           <div className="bg-white p-6 rounded-lg shadow">
             <h3 className="font-semibold mb-4">Energy Balance (MWh)</h3>
             <div className="h-48 flex items-center justify-center text-gray-400">
-              [Energy Balance Chart Placeholder]<img src="img4.jpg"></img>
+              [Energy Balance Chart Placeholder]<img src={img2} alt="" className="rounded-lg w-full" />
             </div>
           </div>
 
