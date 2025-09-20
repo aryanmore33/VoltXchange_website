@@ -5,14 +5,15 @@ import './App.css'
 import Sidebar from './Components/Sidebar'
 import Navbar from './Components/Navbar'
 import Login from './Components/Login'
-import Login from './Components/Login'
+
 import ProfileandSettings from './Components/ProfileandSettings'
-import Finance from './Components/Finance '
-import Tradeexecution from './Components/Tradeexecution '
-import Landingpage from './Components/Landingpage '
-import OnboardingForm from './Components/OnboardingForm  '
-import Dashboard from './Components/Dashboard '
-import Footer from './Components/Footer '
+import Finance from './Components/Finance'
+import Tradeexecution from './Components/Tradeexecution'
+import Landingpage from './Components/Landingpage'
+import OnboardingForm from './Components/OnboardingForm'
+import Dashboard from './Components/Dashboard'
+import Footer from './Components/Footer'
+import Insights from './Components/Insights'
 
 
 
@@ -36,6 +37,7 @@ function App() {
       <OnboardingForm />
       <Dashboard/>
       <Footer/>
+      <Insights/>
 
     </>
   )
