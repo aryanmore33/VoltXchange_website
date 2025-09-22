@@ -1,6 +1,5 @@
 import React from "react";
-import img1 from "../assets/img1.jpeg"
-import img2 from "../assets/img2.jpeg"
+import { Line } from "react-chartjs-2";
 
 const Dashboard = () => {
   return (
@@ -65,7 +64,7 @@ const Dashboard = () => {
             <div className="bg-white p-6 rounded-lg shadow md:col-span-2">
               <h3 className="font-semibold mb-4">Market Price Trends</h3>
               <div className="h-64">
-                <Line data={marketData} options={marketOptions} />
+                {/* <Line data={marketData} options={marketOptions} /> */}
               </div>
             </div>
             <div className="bg-white p-6 rounded-lg shadow">
@@ -81,7 +80,7 @@ const Dashboard = () => {
       
           <div className="bg-white p-6 rounded-lg shadow">
             <div className="h-64">
-              <Line data={balanceData} options={balanceOptions} />
+              {/* <Line data={balanceData} options={balanceOptions} /> */}
             </div>
           </div>
 
@@ -101,3 +100,5 @@ const Dashboard = () => {
     </div>
   );
 }
+
+export default Dashboard
