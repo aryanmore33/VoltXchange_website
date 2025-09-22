@@ -20,7 +20,7 @@ const Footer = () => {
    
         <div className="flex gap-4 text-gray-500">
           <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-            <FaLinkedin className="w-5 h-5 hover:text-black" />
+            <FaLinkedinIn className="w-5 h-5 hover:text-black" />
           </a>
           <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
             <FaTwitter className="w-5 h-5 hover:text-black" />
