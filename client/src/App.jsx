@@ -33,7 +33,7 @@ function App() {
       <Insights/>
       <Tradeexecution/>
       <Finance/>
-      <Tradeexecution/>
+      
       <ProfileandSettings/>
       <Landingpage/>
       <OnboardingForm />
