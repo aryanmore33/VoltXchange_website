@@ -5,6 +5,8 @@ import './App.css'
 import Sidebar from './Components/Sidebar'
 import Navbar from './Components/Navbar'
 import Login from './Components/Login'
+import NotificationCenter from './Components/NotificationCenter'
+import ContractandCompilance from './Components/ContractandCompilance'
 
 import ProfileandSettings from './Components/ProfileandSettings'
 import Finance from './Components/Finance'
@@ -39,6 +41,8 @@ function App() {
       <Footer/>
       <Insights/>
 
+      <NotificationCenter/>
+      <ContractandCompilance/>
     </>
   )
 }

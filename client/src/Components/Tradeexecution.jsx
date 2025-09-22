@@ -12,7 +12,7 @@ const Tradeexecution = () => {
   return (
     <div className="flex flex-row">
       <aside className="w-74 min-h-screen shadow-md p-6">
-        <h2 className="text-xl font-bold text-4xl mb-6">TRADE EXECUTION</h2>
+        <h2 className="text-4xl font-bold  mb-6">TRADE EXECUTION</h2>
         <ul className="space-y-4">
           <li>
             <option> Busy Energy</option>
