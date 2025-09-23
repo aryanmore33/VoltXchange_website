@@ -23,28 +23,29 @@ import RegistrationForm from './Components/RegistrationForm'
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(10)
 
   return (
     <>
       <Navbar/>
-      <Sidebar/>
-      <Login/>
-      <Finance/>
-      <Insights/>
-      <Tradeexecution/>
-      <Finance/>
-      <Tradeexecution/>
-      <ProfileandSettings/>
       <Landingpage/>
+      <Login/>
       <OnboardingForm />
-      <Dashboard/>
-      <Footer/>
+      <Dashboard />
+      <Sidebar/>
+      <Tradeexecution/>
       <Insights/>
-
+      <Finance/>
+      <ContractandCompilance/>
       <NotificationCenter/>
       <ContractandCompilance/>
       <RegistrationForm/>
+      <ProfileandSettings/>
+      <Footer/>
+      
+    
+      
+      
     </>
   )
 }
