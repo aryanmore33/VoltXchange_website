@@ -13,7 +13,7 @@ import {
 } from "chart.js";
 import { Line } from "react-chartjs-2";
 
-// Register Chart.js modules
+
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -27,7 +27,7 @@ ChartJS.register(
 );
 
 export default function Dashboard() {
-  /* ---------------- Market Price Trends Chart ---------------- */
+  
   const marketLabels = [
     "00:00","02:00","04:00","06:00","08:00","10:00",
     "12:00","14:00","16:00","18:00","20:00","22:00"
@@ -83,7 +83,7 @@ export default function Dashboard() {
     },
   };
 
-  /* ---------------- Energy Balance Chart ---------------- */
+
   const balanceLabels = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"];
   const balanceData = {
     labels: balanceLabels,
@@ -130,7 +130,7 @@ export default function Dashboard() {
 
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col">
-      {/* Header */}
+      
       <header className="bg-white shadow px-6 py-4 flex justify-between items-center">
         <h1 className="text-xl font-bold text-gray-800">EnergyTradePro</h1>
         <nav className="space-x-6 text-gray-600">
@@ -147,7 +147,7 @@ export default function Dashboard() {
       </header>
 
       <div className="flex flex-1">
-        {/* Sidebar */}
+        
         <aside className="w-64 bg-white p-4 border-r">
           <h2 className="font-bold mb-4 text-gray-700">TRADING HUB</h2>
           <ul className="space-y-2">
@@ -157,9 +157,9 @@ export default function Dashboard() {
           </ul>
         </aside>
 
-        {/* Main Content */}
+     
         <main className="flex-1 p-6 space-y-6">
-          {/* Portfolio Summary */}
+         
           <div className="bg-white p-6 rounded-lg shadow">
             <h2 className="text-lg font-semibold mb-4">Portfolio Summary</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -185,7 +185,7 @@ export default function Dashboard() {
             </div>
           </div>
 
-          {/* Market Chart + Quick Actions */}
+         
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white p-6 rounded-lg shadow md:col-span-2">
               <h3 className="font-semibold mb-4">Market Price Trends</h3>
@@ -203,14 +203,14 @@ export default function Dashboard() {
             </div>
           </div>
 
-          {/* Energy Balance Chart */}
+        
           <div className="bg-white p-6 rounded-lg shadow">
             <div className="h-64">
               <Line data={balanceData} options={balanceOptions} />
             </div>
           </div>
 
-          {/* Recent Activity */}
+
           <div className="bg-white p-6 rounded-lg shadow">
             <h3 className="font-semibold mb-4">Recent Activity</h3>
             <ul className="space-y-2">
