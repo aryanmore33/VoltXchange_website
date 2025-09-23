@@ -1,8 +1,10 @@
 import React from 'react'
+import Navbar from './Navbar'
 import { FileSpreadsheet, ShieldCheck, ChevronsLeftRight  ,CircleCheckBig , Clock , Building , FileUser} from 'lucide-react'
+import Footer from './Footer'
 
 const ContractandCompilance = () => {
-
+        
     const contracts = [{
         id: "ETC-2023-001",
         counterparty: "SolarGen Inc.",
@@ -66,6 +68,8 @@ const ContractandCompilance = () => {
     ]
 
     return (
+        <>
+        
         <div className='flex'>
             <div className='flex min-h-screen bg-gray-50'>
                 <aside className='w-64 p-6 shadow-md border-2 border-gray-200'>
@@ -158,6 +162,8 @@ const ContractandCompilance = () => {
                 </div>
             </div>
         </div>
+        <Footer/>
+        </>
     )
 } 
 

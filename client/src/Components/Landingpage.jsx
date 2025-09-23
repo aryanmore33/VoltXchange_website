@@ -1,8 +1,12 @@
 
 import React from "react";
+import Navbar from './Navbar'
+import Footer from "./Footer";
 
 function App() {
   return (
+    <>
+    
     <div className="font-sans text-gray-800">
       
        <section className="relative bg-cover bg-center h-[500px] flex flex-col justify-center items-center text-center text-black">
@@ -86,6 +90,8 @@ function App() {
         </button>
       </section>
     </div>
+    <Footer/>
+    </>
   );
 }
 

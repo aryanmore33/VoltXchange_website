@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { Line, Doughnut, Bar } from "react-chartjs-2";
 import {
   Chart as ChartJS,CategoryScale,LinearScale,PointElement,LineElement,ArcElement,BarElement,Title,Tooltip,Legend,} from "chart.js";
-
+import Navbar from './Navbar'
+import Footer from "./Footer";
 ChartJS.register(CategoryScale,LinearScale,PointElement,LineElement,ArcElement,BarElement,Title,Tooltip,Legend);
 
 export default function Insights() {
@@ -137,6 +138,8 @@ export default function Insights() {
   const paginatedTrades = trades.slice((page - 1) * rowsPerPage, page * rowsPerPage);
 
   return (
+    <>
+    
     <div className="flex">
       <aside className="w-64 bg-white shadow-md p-6">
         <h2 className="text-4xl font-bold mb-8 tracking-wide">INSIGHTS</h2>
@@ -249,5 +252,7 @@ export default function Insights() {
         </div>
       </div>
     </div>
+    <Footer/>
+    </>
   );
 }

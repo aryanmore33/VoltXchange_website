@@ -1,4 +1,6 @@
 import React from 'react'
+import Navbar from './Navbar'
+import Footer from './Footer';
 const paymentMethods = [
     {id: 1,type: "Bank Account",details: "Bank of America ••••8765",default: true,},
     {id: 2,type: "Credit Card",details: "Visa ••••1234 (Expires 12/26)",},
@@ -16,6 +18,8 @@ const paymentMethods = [
 
 const Finance = () => {
   return (
+    <>
+    
     <div className="flex flex-row">
       <aside className="w-74 min-h-screen shadow-md p-6">
         <h2 className="font-bold text-4xl mb-6">FINANCE</h2>
@@ -141,8 +145,9 @@ const Finance = () => {
        </div>
        
     </div>
+    <Footer/>
       
-  
+  </>
   )
 }
 

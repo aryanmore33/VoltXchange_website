@@ -12,6 +12,10 @@ import {
   SubTitle,
 } from "chart.js";
 import { Line } from "react-chartjs-2";
+import Navbar from './Navbar'
+import Footer from "./Footer";
+
+
 
 
 ChartJS.register(
@@ -84,6 +88,7 @@ export default function Dashboard() {
   };
 
 
+  
   const balanceLabels = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"];
   const balanceData = {
     labels: balanceLabels,
@@ -129,6 +134,8 @@ export default function Dashboard() {
   };
 
   return (
+    <>
+    
     <div className="min-h-screen bg-gray-100 flex flex-col">
       
       <header className="bg-white shadow px-6 py-4 flex justify-between items-center">
@@ -148,6 +155,7 @@ export default function Dashboard() {
 
       <div className="flex flex-1">
         
+      
         <aside className="w-64 bg-white p-4 border-r">
           <h2 className="font-bold mb-4 text-gray-700">TRADING HUB</h2>
           <ul className="space-y-2">
@@ -160,6 +168,9 @@ export default function Dashboard() {
      
         <main className="flex-1 p-6 space-y-6">
          
+        
+        <main className="flex-1 p-6 space-y-6">
+
           <div className="bg-white p-6 rounded-lg shadow">
             <h2 className="text-lg font-semibold mb-4">Portfolio Summary</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -186,6 +197,7 @@ export default function Dashboard() {
           </div>
 
          
+          
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white p-6 rounded-lg shadow md:col-span-2">
               <h3 className="font-semibold mb-4">Market Price Trends</h3>
@@ -204,6 +216,7 @@ export default function Dashboard() {
           </div>
 
         
+  
           <div className="bg-white p-6 rounded-lg shadow">
             <div className="h-64">
               <Line data={balanceData} options={balanceOptions} />
@@ -211,6 +224,7 @@ export default function Dashboard() {
           </div>
 
 
+      
           <div className="bg-white p-6 rounded-lg shadow">
             <h3 className="font-semibold mb-4">Recent Activity</h3>
             <ul className="space-y-2">
@@ -224,5 +238,7 @@ export default function Dashboard() {
         </main>
       </div>
     </div>
+    <Footer/>
+    </>
   );
 }

@@ -1,6 +1,8 @@
 import React from 'react'
 import { UserRound, ShieldCheck, Settings , CircleUserRound} from "lucide-react"
 import {useState} from "react"
+import Navbar from './Navbar'
+import Footer from './Footer'
 
 
 const ProfileandSettings = () => {
@@ -20,6 +22,8 @@ const ProfileandSettings = () => {
   }
 
   return (
+    <>
+    
     <div className="flex min-h-screen bg-gray-50">
       <aside className="w-64 shadow-md p-6 border-2 border-solid border-gray-200 " >
         <h2 className="text-xl font-semibold mb-6">Account</h2>
@@ -100,6 +104,8 @@ const ProfileandSettings = () => {
         {activeTab==="security" && (<p className="text-gray-600">Security Settins</p>)}
       </main>
     </div>
+    <Footer/>
+    </>
   )
 }
 
