@@ -26,23 +26,23 @@ function App() {
 
   return (
     <>
-      <Navbar/>
-      <Landingpage/>
-      <Login/>
+      <Navbar />
+      <Landingpage />
+      <Login />
       <OnboardingForm />
-      <Dashboard/>
-      <Sidebar/>
-      <Tradeexecution/>
-      <Insights/>
-      <Finance/>
-     <ContractandCompilance/>
-      <NotificationCenter/>
-      <ProfileandSettings/>
-      <Footer/>
-      
+      <Dashboard />
+      <Sidebar />
+      <Tradeexecution />
+      <Insights />
+      <Finance />
+      <ContractandCompilance />
+      <NotificationCenter />
+      <ProfileandSettings />
+      <Footer />
 
-      
-      
+
+
+
     </>
   )
 }
