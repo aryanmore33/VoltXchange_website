@@ -16,6 +16,7 @@ import OnboardingForm from './Components/OnboardingForm'
 import Dashboard from './Components/Dashboard'
 import Footer from './Components/Footer'
 import Insights from './Components/Insights'
+import RegistrationForm from './Components/RegistrationForm'
 
 
 
@@ -43,6 +44,7 @@ function App() {
 
       <NotificationCenter/>
       <ContractandCompilance/>
+      <RegistrationForm/>
     </>
   )
 }
