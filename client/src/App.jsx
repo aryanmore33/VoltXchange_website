@@ -22,7 +22,7 @@ import Insights from './Components/Insights'
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(10)
 
   return (
     <>
@@ -30,7 +30,7 @@ function App() {
       <Landingpage/>
       <Login/>
       <OnboardingForm />
-      <Dashboard/>
+      <Dashboard count={count}/>
       <Sidebar/>
       <Tradeexecution/>
       <Insights/>
