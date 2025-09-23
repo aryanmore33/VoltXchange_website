@@ -21,7 +21,7 @@ import Insights from './Components/Insights'
 
 
 function App() {
-
+  const [count, setCount] = useState(0)
 
   return (
     <>
