@@ -30,7 +30,7 @@ function App() {
       <Landingpage/>
       <Login/>
       <OnboardingForm />
-      <Dashboard count={count}/>
+      <Dashboard/>
       <Sidebar/>
       <Tradeexecution/>
       <Insights/>
