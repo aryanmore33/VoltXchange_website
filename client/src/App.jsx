@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { Routes, Route } from 'react-router-dom'
 import './App.css'
 import Sidebar from './Components/Sidebar'
 import Navbar from './Components/Navbar'
@@ -22,23 +21,27 @@ import Insights from './Components/Insights'
 
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>
       <Navbar />
-      <Landingpage />
-      <Login />
-      <OnboardingForm />
-      <Dashboard />
-      <Sidebar />
-      <Tradeexecution />
-      <Insights />
-      <Finance />
-      <ContractandCompilance />
-      <NotificationCenter />
-      <ProfileandSettings />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Landingpage />} /> 
+        <Route path="/Login" element={<Login />} /> 
+         <Route path="/OnboardingForm" element={<OnboardingForm />} /> 
+         <Route path="/Dashboard" element={<Dashboard />} /> 
+         <Route path="/Sidebar" element={<Sidebar />} /> 
+         <Route path="/Tradeexecution" element={<Tradeexecution />} /> 
+         <Route path="/Insights" element={<Insights />} /> 
+         <Route path="/Finance" element={<Finance />} /> 
+         <Route path="/ContractandCompilance" element={<ContractandCompilance />} /> 
+         <Route path="/Notification" element={<Notification />} /> 
+         <Route path="/ProfileandSettings" element={<ProfileandSettings />} />  
+         
+         
+
+      </Routes>
 
 
 

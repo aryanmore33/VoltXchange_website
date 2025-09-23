@@ -1,8 +1,12 @@
 import React from "react";
 import { Line } from "react-chartjs-2";
+import Navbar from './Navbar'
+import Footer from "./Footer";
 
 const Dashboard = () => {
   return (
+    <>
+    
     <div className="min-h-screen bg-gray-100 flex flex-col">
     
       <header className="bg-white shadow px-6 py-4 flex justify-between items-center">
@@ -98,6 +102,8 @@ const Dashboard = () => {
         </main>
       </div>
     </div>
+    <Footer/>
+    </>
   );
 }
 
