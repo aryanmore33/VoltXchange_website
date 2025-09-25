@@ -12,6 +12,10 @@ import {
   SubTitle,
 } from "chart.js";
 import { Line } from "react-chartjs-2";
+import Navbar from './Navbar'
+import Footer from "./Footer";
+
+
 
 
 ChartJS.register(
@@ -83,6 +87,7 @@ export default function Dashboard() {
     },
   };
 
+
   
   const balanceLabels = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"];
   const balanceData = {
@@ -129,6 +134,8 @@ export default function Dashboard() {
   };
 
   return (
+    <>
+    
     <div className="min-h-screen bg-gray-100 flex flex-col">
       
       <header className="bg-white shadow px-6 py-4 flex justify-between items-center">
@@ -147,6 +154,7 @@ export default function Dashboard() {
       </header>
 
       <div className="flex flex-1">
+        
       
         <aside className="w-64 bg-white p-4 border-r">
           <h2 className="font-bold mb-4 text-gray-700">TRADING HUB</h2>
@@ -157,6 +165,9 @@ export default function Dashboard() {
           </ul>
         </aside>
 
+     
+        <main className="flex-1 p-6 space-y-6">
+         
         
         <main className="flex-1 p-6 space-y-6">
 
@@ -185,6 +196,7 @@ export default function Dashboard() {
             </div>
           </div>
 
+         
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white p-6 rounded-lg shadow md:col-span-2">
@@ -203,12 +215,14 @@ export default function Dashboard() {
             </div>
           </div>
 
+        
   
           <div className="bg-white p-6 rounded-lg shadow">
             <div className="h-64">
               <Line data={balanceData} options={balanceOptions} />
             </div>
           </div>
+
 
       
           <div className="bg-white p-6 rounded-lg shadow">
@@ -224,5 +238,7 @@ export default function Dashboard() {
         </main>
       </div>
     </div>
+    <Footer/>
+    </>
   );
 }

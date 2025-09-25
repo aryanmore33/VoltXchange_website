@@ -1,4 +1,6 @@
 import React from "react";
+import Navbar from './Navbar'
+import Footer from "./Footer";
 import { Zap, DollarSign, Leaf, Activity, Shield, Shuffle } from "lucide-react"; 
 
 export default function App() {
@@ -29,6 +31,29 @@ export default function App() {
               Learn More
             </button>
           </div>
+    <>
+    
+    <div className="font-sans text-gray-800">
+      
+       <section className="relative bg-cover bg-center h-[500px] flex flex-col justify-center items-center text-center text-black">
+         
+    <img src="https://www.axionpower.com/wp-content/uploads/2019/05/Solar-energy-panels-with-wind-turbines-on-orange-sky-web.jpg " style={{width:"400",height:"50%"}}></img>
+       
+         <h1 className="text-4xl md:text-5xl font-bold max-w-3xl">
+
+          Powering Tomorrow: Your Hub for Sustainable Energy Trading
+        </h1>
+        <p className="mt-4 max-w-xl text-lg">
+          EnergyTrade Pro offers real-time insights, efficient tools, and
+          transparent markets for a greener future.
+        </p>
+        <div className="mt-6 space-x-4">
+          <button className="px-6 py-3 bg-blue-600 rounded text-white hover:bg-blue-700">
+            Register Now
+          </button>
+          <button className="px-6 py-3 bg-white text-blue-600 rounded hover:bg-gray-200">
+            Learn More
+          </button>
         </div>
       </section>
       <section className="py-16 px-6 text-center">
@@ -91,5 +116,7 @@ export default function App() {
         </button>
       </section>
     </div>
+    <Footer/>
+    </>
   );
 }

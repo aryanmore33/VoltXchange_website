@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 export default function OnboardingForm() {
   const [form, setForm] = useState({ 
@@ -21,6 +23,8 @@ export default function OnboardingForm() {
   };
 
   return (
+    <>
+    
      <div className="flex items-center justify-center border-2pxsolid black">
     <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center px-4">
       <h1 className="text-2xl font-bold mb-2">Onboarding & KYC Verification</h1>
@@ -110,5 +114,7 @@ export default function OnboardingForm() {
       </form>
     </div>
     </div>
+    <Footer/>
+    </>
   );
 }

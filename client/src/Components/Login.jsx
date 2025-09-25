@@ -1,11 +1,15 @@
 import { useState } from "react";
 import { Mail, Lock } from "lucide-react"; // For icons
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 
 export default function Login() {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
+    <>
+    
     <div className="flex items-center justify-center">
     <div className="min-h-screen flex items-center justify-center bg-gray-100 border rounded-lg  w-full max-w-md bg-white p-8 rounded-2xl shadow-lg">
       <div className="w-full max-w-md bg-white shadow-lg rounded-2xl p-8">
@@ -90,5 +94,7 @@ export default function Login() {
       </div>
     </div>
     </div>
+    <Footer/>
+    </>
   );
 }

@@ -1,5 +1,7 @@
 import React from 'react'
 import { useState } from "react";
+import Navbar from './Navbar';
+import Footer from './Footer';
 const offers = [
   { id: 1, title: "Solar Energy", supplier: "SunPower Inc.", type: "Renewable", available: "5,000 kWh", price: "$0.15 / kWh", minPurchase: "100 kWh", },
   { id: 2, title: "Wind Energy", supplier: "AeroGrid Solutions", type: "Renewable", available: "7,500 kWh", price: "$0.14 / kWh", minPurchase: "100 kWh", },
@@ -9,7 +11,7 @@ const offers = [
 
 const Tradeexecution = () => {
   const [selected, setSelected] = useState(null);
-  return (
+  return (<>
     <div className="flex flex-row ">
       <aside className="w-74 min-h-screen shadow-md p-6">
         <h2 className="text-4xl font-bold  mb-6">TRADE EXECUTION</h2>
@@ -22,9 +24,9 @@ const Tradeexecution = () => {
           </li>
         </ul>
       </aside>
-      <div className='flex flex-col align-center '>
+      <div className='flex flex-col justify-center flex-1'>
 
-      <div className="p-6 text-bold align-center mx-auto">
+      <div className="p-6 text-bold justify-center mx-auto">
         <div className="flex justify-center  h-10 gap-2 mb-6">
           <button className="px-6 py-2 rounded-md text-bold bg-gray-200 text-black">
             Buy Energy
@@ -35,7 +37,8 @@ const Tradeexecution = () => {
           </button>
         </div>
       </div>
-      <div className="p-6 max-w-5xl ">
+      <div className="flex items-center justify-center ">
+      <div className="p-6 max-w-5xl w-full mx-auto">
         <div className="border rounded-xl bg-white p-6">
           <div className="flex justify-between items-center">
             <div className="flex flex-col items-center">
@@ -89,9 +92,13 @@ const Tradeexecution = () => {
           </div>
         </div>
       </div>
+
+      </div>
       </div>
 
     </div>
+    <Footer />
+    </>
   )
 }
 

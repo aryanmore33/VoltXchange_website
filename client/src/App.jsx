@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { Routes, Route } from 'react-router-dom'
 import './App.css'
 import Sidebar from './Components/Sidebar'
 import Navbar from './Components/Navbar'
@@ -16,13 +15,14 @@ import OnboardingForm from './Components/OnboardingForm'
 import Dashboard from './Components/Dashboard'
 import Footer from './Components/Footer'
 import Insights from './Components/Insights'
+import RegistrationForm from './Components/RegistrationForm'
 
 
 
 
 
 function App() {
-  const [count, setCount] = useState(10)
+  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -30,19 +30,42 @@ function App() {
       <Landingpage/>
       <Login/>
       <OnboardingForm />
-      <Dashboard/>
+      <Dashboard />
       <Sidebar/>
       <Tradeexecution/>
       <Insights/>
       <Finance/>
-     <ContractandCompilance/>
+      <ContractandCompilance/>
       <NotificationCenter/>
+      <ContractandCompilance/>
+      <RegistrationForm/>
       <ProfileandSettings/>
       <Footer/>
       
+    
+      
+      
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Landingpage />} /> 
+        <Route path="/Login" element={<Login />} /> 
+         <Route path="/OnboardingForm" element={<OnboardingForm />} /> 
+         <Route path="/Dashboard" element={<Dashboard />} /> 
+         <Route path="/Sidebar" element={<Sidebar />} /> 
+         <Route path="/Tradeexecution" element={<Tradeexecution />} /> 
+         <Route path="/Insights" element={<Insights />} /> 
+         <Route path="/Finance" element={<Finance />} /> 
+         <Route path="/ContractandCompilance" element={<ContractandCompilance />} /> 
+         <Route path="/Notification" element={<Notification />} /> 
+         <Route path="/ProfileandSettings" element={<ProfileandSettings />} />  
+         
+         
 
-      
-      
+      </Routes>
+
+
+
+
     </>
   )
 }

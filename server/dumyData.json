@@ -1,0 +1,92 @@
+[
+  {
+    "email": "rajiv.kumar@example.com",
+    "password": "securePass123",
+    "name": "Rajiv Kumar",
+    "address": "45 MG Road, Bengaluru, Karnataka",
+    "userType": "consumer",
+    "phoneNo": "9876543210",
+    "meterNo": "MTR1001"
+  },
+  {
+    "email": "priya.sharma@example.com",
+    "password": "mypassword456",
+    "name": "Priya Sharma",
+    "address": "12 Civil Lines, Delhi",
+    "userType": "presumer",
+    "phoneNo": "9123456780",
+    "meterNo": "MTR1002"
+  },
+  {
+    "email": "arjun.singh@example.com",
+    "password": "testPass789",
+    "name": "Arjun Singh",
+    "address": "88 Park Street, Kolkata, West Bengal",
+    "userType": "consumer",
+    "phoneNo": "9812345678",
+    "meterNo": "MTR1003"
+  },
+  {
+    "email": "neha.verma@example.com",
+    "password": "password999",
+    "name": "Neha Verma",
+    "address": "23 FC Road, Pune, Maharashtra",
+    "userType": "presumer",
+    "phoneNo": "9988776655",
+    "meterNo": "MTR1004"
+  },
+  {
+    "email": "vikas.mehra@example.com",
+    "password": "vikasPass321",
+    "name": "Vikas Mehra",
+    "address": "67 Sector 22, Chandigarh",
+    "userType": "consumer",
+    "phoneNo": "9876012345",
+    "meterNo": "MTR1005"
+  },
+  {
+    "email": "sonali.deshmukh@example.com",
+    "password": "sonaPass111",
+    "name": "Sonali Deshmukh",
+    "address": "19 Shivaji Nagar, Nagpur, Maharashtra",
+    "userType": "presumer",
+    "phoneNo": "9765432109",
+    "meterNo": "MTR1006"
+  },
+  {
+    "email": "amit.patel@example.com",
+    "password": "amitSecure77",
+    "name": "Amit Patel",
+    "address": "4 SG Highway, Ahmedabad, Gujarat",
+    "userType": "consumer",
+    "phoneNo": "9823456789",
+    "meterNo": "MTR1007"
+  },
+  {
+    "email": "rhea.chatterjee@example.com",
+    "password": "rheaPass888",
+    "name": "Rhea Chatterjee",
+    "address": "31 Salt Lake City, Kolkata, West Bengal",
+    "userType": "presumer",
+    "phoneNo": "9832123456",
+    "meterNo": "MTR1008"
+  },
+  {
+    "email": "sanjay.nair@example.com",
+    "password": "sanjayPass555",
+    "name": "Sanjay Nair",
+    "address": "10 MG Road, Kochi, Kerala",
+    "userType": "consumer",
+    "phoneNo": "9845123456",
+    "meterNo": "MTR1009"
+  },
+  {
+    "email": "ananya.iyer@example.com",
+    "password": "ananyaPass222",
+    "name": "Ananya Iyer",
+    "address": "52 T Nagar, Chennai, Tamil Nadu",
+    "userType": "presumer",
+    "phoneNo": "9877098765",
+    "meterNo": "MTR1010"
+  }
+]

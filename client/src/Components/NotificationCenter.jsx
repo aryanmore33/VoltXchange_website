@@ -1,6 +1,8 @@
 import React from 'react'
 import { Bell, Lightbulb, Mail , MessageSquare ,Smartphone } from "lucide-react"
 import { useState, } from 'react'
+import Navbar from './Navbar'
+import Footer from './Footer'
 
 const initialNotifications = [
   { id: 1, category: "Marketplace", title: "New Offer: Solar Energy Available", description: "A new energy contract is available at ", icon: <Lightbulb /> },
@@ -64,6 +66,8 @@ const NotificationCenter = () => {
   }
 
   return (
+    <>
+    
     <div className="flex min-h-screen bg-gray-50">
       {/* SIDEBAR */}
       <aside className="w-50 shaddow-md px-4 py-6 border-solid border-gray-200 border-2">
@@ -200,6 +204,8 @@ const NotificationCenter = () => {
 
 
     </div>
+    <Footer/>
+    </>
   )
 }
 

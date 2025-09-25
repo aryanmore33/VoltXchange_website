@@ -1,5 +1,9 @@
 import React from 'react'
 import { useState } from "react";
+import { FaBolt, FaLeaf, FaClock, FaDollarSign } from "react-icons/fa";
+import Navbar from './Navbar'
+import Footer from './Footer';
+
 const contractsData = [
   { id: 1, name: "GeoTherm", kWh: 75000, source: "Renewable", duration: "1 Year", price: 25000 },
   { id: 2, name: "BioFuel D", kWh: 80000, source: "Renewable", duration: "3 Months", price: 27000 },
@@ -24,6 +28,8 @@ const Sidebar = () => {
   const currentContracts = filteredContracts.slice(startIndex, startIndex + contractsPerPage);
 
   return (
+    <>
+    
     <div className="flex flex-row">
       <aside className="w-62 min-h-screen shadow-md p-6">
         <h2 className="text-xl font-semibold mb-6">MARKETPLACE</h2>
@@ -126,8 +132,14 @@ const Sidebar = () => {
           {currentContracts.map((contract) => (
             <div key={contract.id} className="border rounded-2xl p-4 shadow-sm bg-white">
               <h3 className="text-lg font-semibold mb-2">{contract.name}</h3>
-              <p className="text-black-600">kWh: {contract.kWh.toLocaleString()}</p>
+              <p className="text-black-600">
+                <FaBolt className="mr-2 text-yellow-500" />
+
+                 kWh: {contract.kWh.toLocaleString()}
+             </p>
               <p className="text-black-600 flex items-center">
+                <FaLeaf className="mr-2 text-blue-500" />
+
                 Source:{" "}
                 <span
                   className={`ml-2 px-2 py-1 rounded text-xs font-medium ${contract.source === "Renewable" ? "bg-black-100 text-black-700" : "bg-black-100 text-black-700"
@@ -164,6 +176,8 @@ const Sidebar = () => {
         </div>
       </div>
     </div>
+    <Footer/>
+    </>
 
 
   )
