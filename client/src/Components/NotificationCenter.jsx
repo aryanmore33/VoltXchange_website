@@ -1,5 +1,5 @@
 import React from 'react'
-import { Bell, Lightbulb, Mail , MessageSquare ,Smartphone } from "lucide-react"
+import { Bell, Lightbulb, Mail , MessageSquare ,Smartphone , Settings} from "lucide-react"
 import { useState, } from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
@@ -72,10 +72,10 @@ const NotificationCenter = () => {
       {/* SIDEBAR */}
       <aside className="w-50 shaddow-md px-4 py-6 border-solid border-gray-200 border-2">
         <div>
-          <h1 className="mb-3">Communication</h1>
-          <ul className="ml-4">
-            <li><button className="flex items-center gap-2 w-full"><Bell />Alert</button></li>
-            <li>Preferences</li>
+          <h1 className="mb-3 text-gray-400 font-semibold text-shadow-amber-100">COMMUNICATIONS</h1>
+          <ul className="ml-3 mt-2">
+            <li><button className="flex items-center gap-2 w-full mt-1"><Bell />Alert</button></li>
+            <li><button className="flex items-center gap-2 w-full mt-2"><Settings />Preferences</button></li>
           </ul>
         </div>
       </aside>
@@ -84,7 +84,7 @@ const NotificationCenter = () => {
         <h1 className="text-xl font-bold">Notification center</h1>
         <div className='flex w-full'>
           {tabs.map((tab) => (
-            <button key={tab} onClick={() => setActiveTab(tab)} className={`px-4 py-2 rounded-md ${activeTab == tab ? "bg-white" : "bg-gray-200"}`}>{tab}</button>
+            <button key={tab} onClick={() => setActiveTab(tab)} className={`px-4 py-2 border-1 border-black hover:cursor-pointer ${activeTab == tab ? "bg-white" : "bg-gray-200"}`}>{tab}</button>
           ))}
         </div>
         {/* Notifications */}

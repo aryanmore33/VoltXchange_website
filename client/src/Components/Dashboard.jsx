@@ -166,7 +166,7 @@ export default function Dashboard() {
         </aside>
 
      
-        <main className="flex-1 p-6 space-y-6">
+        
          
         
         <main className="flex-1 p-6 space-y-6">

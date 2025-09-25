@@ -26,7 +26,7 @@ function App() {
 
   return (
     <>
-      <Navbar/>
+      {/* <Navbar/>
       <Landingpage/>
       <Login/>
       <OnboardingForm />
@@ -40,7 +40,7 @@ function App() {
       <ContractandCompilance/>
       <RegistrationForm/>
       <ProfileandSettings/>
-      <Footer/>
+      <Footer/> */}
       
     
       
@@ -56,8 +56,9 @@ function App() {
          <Route path="/Insights" element={<Insights />} /> 
          <Route path="/Finance" element={<Finance />} /> 
          <Route path="/ContractandCompilance" element={<ContractandCompilance />} /> 
-         <Route path="/Notification" element={<Notification />} /> 
+         <Route path="/Notifications" element={<NotificationCenter />} /> 
          <Route path="/ProfileandSettings" element={<ProfileandSettings />} />  
+         <Route path="/Register" element={<RegistrationForm/>}/>
          
          
 
