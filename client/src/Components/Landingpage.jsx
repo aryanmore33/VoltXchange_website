@@ -4,18 +4,18 @@ import Footer from "./Footer";
 import { Zap, DollarSign, Leaf, Activity, Shield, Shuffle } from "lucide-react"; 
 
 export default function App() {
-  return (
-    <div className="font-sans display-flex justify-content-center align-items w-min-screen text-gray-800">
+  return (<>
+    <div className="font-sans display-flex justify-content-center align-items w-min-screen text-gray-800"/>
       <section
         className="relative h-[500px] flex flex-col justify-center items-center w-min-screen text-center bg-cover bg-center"
         style={{
           backgroundImage:
             "url('https://www.axionpower.com/wp-content/uploads/2019/05/Solar-energy-panels-with-wind-turbines-on-orange-sky-web.jpg')",
         }}
-      >
-        <div className="absolute inset-0 bg-black/40"></div>
+      />
+       
 
-        <div className="relative z-10 text-white px-4 max-w-3xl">
+        {/* <div className="relative z-10 text-white px-4 max-w-3xl"> */}
           <h1 className="text-3xl md:text-5xl font-bold mb-4">
             Powering Tomorrow: Your Hub for Sustainable Energy Trading
           </h1>
@@ -117,6 +117,7 @@ export default function App() {
       </section>
     </div>
     <Footer/>
+    </>
     </>
   );
 }
