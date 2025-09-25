@@ -25,12 +25,13 @@ const Navbar = () => {
                 <li className="hover: text-black hover:font-semibold transition-colors duration-200"><Link to="Tradeexecution" >Trade</Link></li>
                 <li className="hover: text-black hover:font-semibold transition-colors duration-200"><Link to="/Insights" >Analytics</Link></li>
                 <li className="hover: text-black hover:font-semibold transition-colors duration-200"><Link to="/Finance" >Wallet</Link></li>
-                <li className="hover: text-black hover:font-semibold transition-colors duration-200"><Link to="ContractandCompilance">Contracts</Link></li>
+                <li className="hover: text-black hover:font-semibold transition-colors duration-200"><Link to="/ContractandCompilance">Contracts</Link></li>
+                <li className="hover: text-black hover:font-semibold transition-colors duration-200"><Link to="/Notifications">Notifications</Link></li>
                 {/* <Link to="/">Home</Link> */}
             </ul>
             <div className="flex gap-3 relative" ref={dropdownRef}>
                 <button className="px-4 py-2 border rounded"><Link to="/Login">Login</Link></button>
-                <button className=" px-4 py-2 bg-black text-white rounded-lg ">Register</button>
+                <button className=" px-4 py-2 bg-black text-white rounded-lg "><Link to ="Register">Register</Link></button>
                 <button onClick={()=> setOpen(!open)}>
                     <UserPen className="w-6 h-6" />
                 </button>

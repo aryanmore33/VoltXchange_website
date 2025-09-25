@@ -59,10 +59,21 @@ const ProfileandSettings = () => {
               <h2 className="text-lg font-semibold mb-2">My Profile Photo</h2>
               <p className="text-sm text-gray-500 mb-4">Update your profile picture here</p>
               <div>
+                { profilePhoto ? (
+                <img src={profilePhoto}  className="w-32 h-32 rounded-full object-cover flex justify-center align-center"/> ) :( 
+                  <div className="w-32 h-32 rounded-full bg-gray-200 flex items-center justify-center">
+                    <CircleUserRound className="w-12 h-12 text-gray-500"/>
+                    </div>
+                )
                 
-                <img src={profilePhoto} alt="profile" className=""/>
-                <label htmlFor="photoUpload" className="flex items-center gap-2 px-4 py-2 border rounded-md cursor-pointer hover:bg-gray-200"><CircleUserRound className="w-5 h-5"/>Change Photo</label>
-                <input type="file" id="photoUpload" accept="image/*" className="hidden" onChange={handlePhotoChange}/>
+                
+                }
+
+
+
+
+                <label htmlFor="photoUpload" className="flex items-center gap-2 px-4 py-2 border w-50 rounded-md cursor-pointer hover:bg-gray-200"><CircleUserRound className="w-5 h-5"/>Change Photo</label>
+                <input type="file" id="photoUpload" accept="image/*" className="w-3 h-3 hidden " onChange={handlePhotoChange}/>
               </div>
             </section>
             <section className="bg-white p-6 rounded-md shadow">
@@ -70,16 +81,16 @@ const ProfileandSettings = () => {
               <p className="text-sm text-gray-500 mb-4">Update Your Personal deatils</p>
               <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <lable htmlFor="name"> Full Name
-                  <input type="text" id="name" placeholder="Enter Name" defaultValue="Liam Basil" className="ml-2 border border-gray-400 rounded px-2 py-1 focus:outline-none focus:ring-1 focus:ring-blue-900"/>
+                  <input type="text" id="name" placeholder="Enter Name"  className="ml-2 border border-gray-400 rounded px-2 py-1 focus:outline-none focus:ring-1 focus:ring-blue-900"/>
                 </lable>
                 <lable htmlFor="email"> Email Address
-                  <input type="email" id="email" placeholder='Enter email' defaultValue="liam.basil@energytradepro.com" className="ml-2 border border-gray-400 rounded px-2 py-1 focus:outline-none focus:ring-1 focus:ring-blue-900"/>
+                  <input type="email" id="email" placeholder='Enter email'  className="ml-2 border border-gray-400 rounded px-2 py-1 focus:outline-none focus:ring-1 focus:ring-blue-900"/>
                 </lable>
                 <lable htmlFor="phone">Phone Number
-                  <input type="phone" id="phone" placeholder="Enter Phone Number" defaultValue="+91 9820184433" className="ml-2 border border-gray-400 rounded px-2 py-1 focus:outline-none focus:ring-1 focus:ring-blue-900"/>
+                  <input type="phone" id="phone" placeholder="Enter Phone Number"  className="ml-2 border border-gray-400 rounded px-2 py-1 focus:outline-none focus:ring-1 focus:ring-blue-900"/>
                 </lable>
                 <lable htmlFor="date">DOB
-                  <input id="date" type="date" defaultValue="16-08-2006" className="ml-2 border border-gray-400 rounded px-2 py-1 focus:outline-none focus:ring-1 focus:ring-blue-900"/>
+                  <input id="date" type="date"  className="ml-2 border border-gray-400 rounded px-2 py-1 focus:outline-none focus:ring-1 focus:ring-blue-900"/>
                 </lable>
               </form>
             </section>
@@ -88,13 +99,13 @@ const ProfileandSettings = () => {
               <p className="text-sm text-gray-500 mb-4">Update your Company details</p>
               <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <lable htmlFor="company"> Company Name
-                  <input type="text" id="company" placeholder='Company Name' defaultValue="Green Energy Solution Inc." className="ml-2 border border-gray-400 rounded px-2 py-1 focus:outline-none focus:ring-1 focus:ring-blue-900"/>
+                  <input type="text" id="company" placeholder='Company Name'  className="ml-2 border border-gray-400 rounded px-2 py-1 focus:outline-none focus:ring-1 focus:ring-blue-900"/>
                 </lable>
                 <lable htmlFor="role">Role
-                  <input type="text" id="role" placeholder='Role' defaultValue="Senior Trader" className="ml-2 border border-gray-400 rounded px-2 py-1 focus:outline-none focus:ring-1 focus:ring-blue-900"/>
+                  <input type="text" id="role" placeholder='Role'  className="ml-2 border border-gray-400 rounded px-2 py-1 focus:outline-none focus:ring-1 focus:ring-blue-900"/>
                 </lable>
                 <lable htmlFor="industryType">Role
-                  <input type="text" id="industryType" placeholder='Industry Type' defaultValue="Renewable Energy" className="ml-2 border border-gray-400 rounded px-2 py-1 focus:outline-none focus:ring-1 focus:ring-blue-900"/>
+                  <input type="text" id="industryType" placeholder='Industry Type'  className="ml-2 border border-gray-400 rounded px-2 py-1 focus:outline-none focus:ring-1 focus:ring-blue-900"/>
                 </lable>
               </form>
             </section>

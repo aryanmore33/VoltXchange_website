@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Mail, Lock } from "lucide-react"; // For icons
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import { Link } from 'react-router-dom'
+
 
 
 export default function Login() {
@@ -87,8 +89,8 @@ export default function Login() {
       
         <p className="text-center text-gray-600 text-sm mt-6">
           Don’t have an account?{" "}
-          <a href="#" className="text-black font-medium hover:underline">
-            Sign Up
+          <a href="#" className="text-black font-medium hover:underline"><Link to ="/Register">Sign Up</Link>
+            
           </a>
         </p>
       </div>
