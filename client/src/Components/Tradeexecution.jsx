@@ -11,10 +11,8 @@ const offers = [
 
 const Tradeexecution = () => {
   const [selected, setSelected] = useState(null);
-  return (
-    <>
-    
-    <div className="flex flex-row min-h-screen">
+  return (<>
+    <div className="flex flex-row ">
       <aside className="w-74 min-h-screen shadow-md p-6">
         <h2 className="text-4xl font-bold  mb-6">TRADE EXECUTION</h2>
         <ul className="space-y-4">
